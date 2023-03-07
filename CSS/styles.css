@@ -36,13 +36,16 @@ body{
 .site-nav .link:focus {
 color: var(--primary-text-color);
 }
+/*Основной цвет заголовков секций*/
 .section-title{
     color: var(--primary-text-color);
 }
-.features-list{
+/*преимущества*/
+.features-list .title{
     color: var(--primary-text-color);
 }
-.personal-list{
+/*чем занимаемся*/
+.personal-list .title{
     color: var(--primary-text-color);
 }
 /*button*/

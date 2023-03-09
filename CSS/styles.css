@@ -9,6 +9,7 @@
     --primary-text-color:#212121;
     --title-text-color:#757575;
     --accent-color:#2196F3; 
+    --primary-white-color:#FFFFFF;
 
 }
 
@@ -28,6 +29,8 @@ body{
     color:#FFFFFF ;
 }
 
+
+
 /*site-nav*/
 .site-nav .link {
     color: var(--accent-color);
@@ -36,6 +39,14 @@ body{
 .site-nav .link:focus {
 color: var(--primary-text-color);
 }
+
+.site-nav .current{
+    color: var(--primary-text-color);
+}
+
+
+
+
 /*Основной цвет заголовков секций*/
 .section-title{
     color: var(--primary-text-color);
@@ -50,5 +61,15 @@ color: var(--primary-text-color);
 }
 /*button*/
 .button{
+color: var(--title-text-color);
+background-color: var(--accent-color);
+}
 
+.button.primary{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+.button.secondary{
+    background-color:var(--primary-white-color) ;
+    color: var(--accent-color);
 }

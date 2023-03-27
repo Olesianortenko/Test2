@@ -11,37 +11,53 @@
     --accent-color:#2196F3; 
     --primary-white-color:#FFFFFF;
     --primary-button-color:#F5F4FA;
-
-
 }
-
 
 
 body{
     background-color #FFFFFF;
-    color: var(--primary-text-color);}
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+}
 .list{
     list-style: none;}
 
 
-.Logo{color: #000000;}
+/*Логотип*/
+.Logo{
+    color: #000000;
 
-/*hero*/
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+/*Герой*/
 .hero-title{
     color:#FFFFFF ;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
 }
 
 
 
-/*site-nav*/
+ /*site-nav*/
 .site-nav .link {
     color: var(--accent-color);
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
 color: var(--primary-text-color);
 }
-
 .site-nav .current{
     color: var(--primary-text-color);
 }
@@ -73,8 +89,11 @@ color: var(--title-text-color);
 .button{
 color: var(--title-text-color);
 background-color: var(--accent-color);
-}
 
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+}
 .button.primary{
     background-color: var(--accent-color);
     color: var(--primary-button-color);

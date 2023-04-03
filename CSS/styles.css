@@ -12,6 +12,9 @@
     --primary-white-color:#FFFFFF;
     --primary-button-color:#F5F4FA;
     --footer-background-color:#2F303A;
+    --logo-main:#2196f3;
+    --logo-header:#000000;
+    --logo-footer:#FFFFFF;
 
 }
 
@@ -33,13 +36,19 @@ font-family: Roboto, sans-serif;
 list-style: none;}
 
 /*Логотип*/
-.Logo{
-color: #000000;
-
+.logo{
+color:var(--logo-main);
 font-family: Raleway;
 font-size: 26px;
 line-height: 1.2;
 text-decoration: none;
+}
+.logo-head {
+    color:var(--logo-header)
+}
+
+.logo-footer{
+    color: var(--logo-footer);
 }
 
 /*Герой*/
@@ -67,12 +76,11 @@ text-decoration: none;
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
-.contacts .link:focus {
-color: var(--primary-text-color);
+.contacts .link:focus{
+color: var(--accent-color);
 }
 .site-nav .current,
-.contacts .current
-{
+.contacts .current{
 color: var(--primary-text-color);
 }
 
@@ -156,7 +164,24 @@ color: var(--accent-color);
 
 .footer{
 background-color:var(--footer-background-color);
-color: #FFFFFF;
+
+}
+.address .text{
+color: var(--primary-white-color);
+text-decoration:none;
+}
+.address .contacts{
+color: rgba(255, 255, 255, 0.6); 
+text-decoration:none;   
+}
+
+.address-list .contacts:hover,
+.address-list .contacts:focus {
+color: var(--accent-color);
+}
+.address{
+font-family: 'Roboto';
+font-style: normal;
 
 font-weight: 400;
 font-size: 14px;
